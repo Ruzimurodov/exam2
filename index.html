@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Exam2-bootstrap</title>
+</head>
+<body>
+    
+    <div class="container">
+        <p class="fs-5 mb-4">
+            Cart - Customer Information - Shiping Method - <span class="fw-bold">Payment Method</span>
+        </p>
+        <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+            <div class="row gx-5">
+                <div class="col-8">
+                    <div class="w-100 shadow p-5 mb-5 bg-body rounded">
+                        <h3 class="fs-1 fw-bold mb-5">
+                            Payment information
+                        </h3>
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <label class="w-100">
+                                        CARD NUMBER
+                                        
+                                        <input class="form-control mt-1 mb-4" name="user_card" placeholder="Enter card number" type="password" required>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div>
+                                    <label class="w-100">
+                                        CARD HOLDER
+                                        <input class="form-control mt-1 mb-4" type="text" name="user_name" required>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div>
+                                    <label class="w-100">
+                                        EXP DATE
+                                        <input class="form-control mt-1 mb-4" type="date" name="user_name" required>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div>
+                                    <label class="w-100">
+                                        CVC
+                                        <input class="form-control mt-1 mb-4" type="password" name="user_name" required>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shadow p-4 mb-5 bg-body rounded">
+                        <div class="d-flex justify-content-between align-items-center border-bottom pb-4">
+                            <div class="d-flex w-100 align-items-center">
+                                <button type="button" class="btn btn-primary position-relative">
+                                    <img src="./images/choco.jpg" 
+                                    width="45"
+                                    height="35"
+                                    alt="chocolate image">
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        99+
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </button>
+                                <p class="fs-5 ms-3 pt-2">
+                                    Chocolate bar
+                                </p>
+                            </div>
+                            <p class="fw-bold fs-4">
+                                $2.49
+                            </p>
+                        </div>
+                        <div class="py-3 border-bottom">
+                            <div class="d-flex justify-content-between">
+                                <span class="fw-normal fs-5">
+                                    Subtotal
+                                </span>
+                                <span class="fw-bold fs-4">
+                                    $4.98
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="fw-normal fs-5">
+                                    Shipping
+                                </span>
+                                <span class="fw-bold fs-4">
+                                    $3.00
+                                </span>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between py-4">
+                            <span class="fw-normal fs-5">
+                                Total
+                            </span>
+                            <span class="fw-bold fs-3">
+                                $7.98
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="shadow p-5 mb-5 bg-body rounded p-4">
+                        <h3 class="fw-bold fs-1 mb-5">
+                            Billing address
+                        </h3>
+                        <div class="d-flex align-items-center form-check border-bottom pb-3">
+                            <input class="form-check-input fs-4" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label ms-3 fs-5 fw-bolder" for="flexRadioDefault1">
+                              Same as the shipping address
+                            </label>
+                          </div>
+                          <div class="d-flex align-items-center form-check pt-3">
+                            <input class="form-check-input fs-4" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                            <label class="form-check-label ms-3 fs-5 fw-bolder" for="flexRadioDefault2">
+                              Use a different billing address
+                            </label>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="d-flex justify-content-between align-items-center mb-5"> 
+                        <a class="text-decoration-none fs-5" href="#">Return to shipping method</a>
+                        <button class="btn btn-primary px-4 py-2" type="submit">Complete order</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
